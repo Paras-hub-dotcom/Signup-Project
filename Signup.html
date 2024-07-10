@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Sign Up Form</h2>
+      <form id="sign-up-form">
+        <div class="form-group">
+          <label for="first-name">First Name:<span>*</span></label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name:<span>*</span></label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email ID:<span>*</span></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number:<span>*</span></label>
+          <input type="tel" id="mobile-number" name="mobile-number" required />
+        </div>
+        <div class="form-group">
+          <label for="age">Age:<span>*</span></label>
+          <input type="number" id="age" name="age" required />
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:<span>*</span></label>
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:<span>*</span></label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:<span>*</span></label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="country">Country:<span>*</span></label>
+          <input type="text" id="country" name="country" required />
+        </div>
+        <div class="form-group">
+          <label for="state">State:<span>*</span></label>
+          <input type="text" id="state" name="state" required />
+        </div>
+        <div class="form-group">
+          <label for="pincode">Pincode:<span>*</span></label>
+          <input type="number" id="pincode" name="pincode" required />
+        </div>
+        <div class="form-group">
+          <label for="reference-id">Reference ID (Optional):</label>
+          <input type="text" id="reference-id" name="reference-id" />
+        </div>
+        <div class="form-group">
+          <input
+            type="checkbox"
+            id="terms-and-conditions"
+            name="terms-and-conditions"
+            required
+          />
+          <label for="terms-and-conditions"
+            >I agree to the
+            <a href="https://www.google.com" target="_blank"
+              >Terms and Conditions</a
+            ></label
+          >
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
